@@ -1,0 +1,193 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* step -2 - component */
+.heroSection {
+    /* background-color: #f0a7a7; */
+    margin: 3rem;
+    
+
+
+}
+                
+
+/* step -3 - componentContainer */
+.heroContainer {
+    /* background-color: rgb(255, 255, 255); */
+    background: linear-gradient(90deg, #6a85f1, #8f5be3);
+    max-width: 1450px;
+    margin: auto;
+    padding: 2.5rem 0rem;
+    border-radius: 1.5rem;
+
+}
+
+/* step -4 - row */
+.heroBody1 {
+    /* background-color: rgb(241, 59, 59); */
+
+}
+
+.heroBody2 {
+    /* background-color: rgb(165, 231, 247); */
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: auto;
+
+
+
+}
+
+/* step -5 - column */
+
+.heroBlock1 {
+    /* background-color: #59c3e4; */
+
+}
+
+.heroBlock2 {
+    /* background-color: #faa3a3; */
+    /* border: 2px solid #000000; */
+    width: 100%;
+
+}
+
+#card1 {
+    /* background-color: #ffffff; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    /* border: 2px solid #000000; */
+}
+
+#card2 {
+    /* background-color: #8f5be3; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+     width: 100%;
+     /* border: 2px solid #000000; */
+}
+
+#card3 {
+    /* background-color: #5be3d1; */
+    display: flex;
+      align-items: center;
+    justify-content: flex-end;
+     width: 100%;
+     /* border: 2px solid #000000; */
+}
+#card4 {
+    /* background-color: #5bbce3; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+     width: 100%;
+     /* border: 2px solid #000000; */
+}
+
+
+/* step -6 - subColumn */
+
+.heroBox1 {
+    /* background-color: #ffffff; */
+    border-radius: 1rem;
+    /* border: 2px solid #000000; */
+    padding: 1rem;
+
+}
+
+.heroBox2 {
+  /* background-color: #ffffff; */
+  padding: 0.5rem;
+}
+
+#c1{
+     background-color: #ffffff;
+    width: 100%;
+    border-radius: 1rem;
+    /* border: 2px solid #000000; */
+}
+#c2{
+     background-color: #ffffff;
+    width: 100%;
+    border-radius: 1rem;
+    /* border: 2px solid #000000; */
+}
+#c3{
+     background-color: #ffffff;
+    width: 55%;
+    border-radius: 1rem;
+    /* border: 2px solid #000000; */
+}
+#c4{
+     background-color: #ffffff;
+    width: 65%;
+    border-radius: 1rem;
+    /* border: 2px solid #000000; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* step -7 - contentContainer */
+.heroBox1 h1 {
+    color: #ffffff;
+    font-family: var(--ffSecondary);
+    font-size: 4.5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+
+}
+
+.heroBox1 p {
+    color: #ffffff;
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+
+}
+
+.heroBox2 h2 {
+    color: #000000;
+    font-family: var(--ffSecondary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+  
+}
+
+.heroBox2 p {
+    color: #000000;
+    font-family: var(--ffSecondary);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+   
+}

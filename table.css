@@ -1,0 +1,106 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* step -2 - component */
+.table {
+    /* background-color: rgb(241, 11, 11);   */
+
+}
+
+/* step -3 - componentContainer */
+.tableContainer {
+    /* background-color: rgb(91, 226, 12); */
+
+}
+
+/* step -4 - row */
+.tableBody {
+    /* background-color: rgb(255, 255, 255); */
+
+}
+
+/* step -5 - column */
+.tableBlock1 {
+    /* background-color: #fc03c6; */
+
+}
+
+.tableBlock2 {
+    width: 100%;
+    padding: 1rem;
+    /* background-color: #03cafc; */
+}
+
+
+
+
+
+/* step -6 - subColumn */
+
+.tableBox1 {
+    /* background-color: #e79191; */
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 100%;
+
+}
+
+.tableBox2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* step -7 - contentContainer */
+
+
+.tableBox1 button {
+    background-color: var(--primaryColor);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-family: "Inter", serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0rem;
+}
+
+th {
+    padding: 1rem;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #4a90e2;
+    color: white;
+    border: 1px solid #ddd;
+    font-size: 1.6rem;
+
+}
+

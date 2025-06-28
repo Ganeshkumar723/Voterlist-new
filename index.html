@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>வாக்காளர் பட்டியல் - Electoral Roll</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./heroSection.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="./table.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+</head>
+<body>
+    <header> <!--parentContainer-->
+        <div class="heroSection"> <!--component-->
+            <div class="heroContainer"> <!--componentContainer-->
+                <div class="heroBody1"> <!--row-->
+                    <div class="heroBlock1 dflex"> <!--column-->
+                        <div class="heroBox1 dflex-col"> <!--subColumn-->
+                            <h1>🗳️ வாக்காளர் பட்டியல்</h1> <!--contentContainer-->
+                            <p>சட்டமன்றத் தொகுதி - Electoral Roll</p> <!--contentContainer-->
+                        </div>
+                    </div>
+                </div>
+                <div class="heroBody2"> <!--row-->
+                    <div class="heroBlock2" id="card1"> <!--column-->
+                        <div class="heroBox2 dflex-col" id="c1"> <!--subColumn-->
+                            <h2>சட்டமன்றத் தொகுதியின் எண் மற்றும் பெயர்:</h2> <!--contentContainer-->
+                            <p>167-மன்னார்குடி</p> <!--contentContainer-->
+                        </div>
+                    </div>
+                    <div class="heroBlock2" id="card2"> <!--column-->
+                        <div class="heroBox2 dflex-col" id="c2"> <!--subColumn-->
+                            <h2>பிரிவு எண் மற்றும் பெயர்:</h2> <!--contentContainer-->
+                            <p>1-தளிக் காட்டை (வ.கி) மற்றும் (ஊ), கீழத் தெரு வார்டு-1</p> <!--contentContainer-->
+                        </div>
+                    </div>
+                    <div class="heroBlock2" id="card3"> <!--column-->
+                        <div class="heroBox2 dflex-col" id="c3"> <!--subColumn-->
+                            <h2>பாகம் எண்:</h2> <!--contentContainer-->
+                            <p>133</p> <!--contentContainer-->
+                        </div>
+                    </div>
+                    <div class="heroBlock2" id="card4"> <!--column-->
+                        <div class="heroBox2 dflex-col" id="c4"> <!--subColumn-->
+                            <h2>பட்டியல் வெளியிடப்பட்ட நாள்:</h2> <!--contentContainer-->
+                            <p>06-01-2025</p> <!--contentContainer-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main> <!--parentContainer-->
+        <section class="form componentSpacing"> <!--component-->
+            <div class="formContainer"> <!--componentContainer-->
+                <div class="formBody"> <!--row-->
+                    <div class="formBlock1 dflex"> <!--column-->
+                        <div class="formBox1 dflex-col"> <!--subColumn-->
+                            <form action="" class="fileUpload">
+                                <input type="file" id="jsonFile" accept="application/json">
+                                <button type="button" id="jsonButton" onclick="handleJSONUpload()">📁 Upload JSON</button>
+                                <input type="file" id="excelFile" accept=".xlsx, .xls">
+                                <button type="button" id="excelButton" onclick="handleExcelUpload()">📊 Upload Excel</button>
+                                <button type="button" id="clearButton" onclick="clearAllData()">🗑️ Clear All</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="formBlock2 dflex"> <!--column-->
+                        <div class="formBox2"> <!--subColumn-->
+                            <form action="" class="categoryform">
+                                <select name="category" id="columnSelect" >
+                                    <option value="all">All Column</option>
+                                    <option value="1">ID</option>
+                                    <option value="2">Name</option>
+                                    <option value="3">Father</option>
+                                    <option value="4">House</option>
+                                    <option value="5">Age</option>
+                                    <option value="6">Gender</option>
+                                </select>
+                                <input type="search" id="searchBar" placeholder="தேடுங்கள்">
+                                <button type="button" onclick="filterTable()" id="searchButton">🔍 Search</button>
+                                <button type="button" onclick="resetFilters()" id="resetButton">🔄 reset</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="table"> <!--component-->
+            <div class="tableContainer"> <!--componentContainer-->
+                <div class="tableBody"> <!--row-->
+                    <div class="tableBlock1 dflex"> <!--column-->
+                        <div class="tableBox1"> <!--subColumn-->
+                            <button onclick="exportToCSV()">📄 Export to CSV</button>
+                            <button onclick="downloadJSON()">📁 Download JSON</button>
+                            <button onclick="exportToExcel()">📊 Export to Excel</button>
+                            <button onclick="exportToPDF()">📋 Export to PDF</button>
+                        </div>
+                    </div>
+                    <div class="tableBlock2 dflex">
+                        <div class="tableBox2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>வரிசை எண்</th>
+                                        <th>அட்டை எண்</th>
+                                        <th>பெயர்</th>
+                                        <th>தந்தை / கணவர் பெயர்</th>
+                                        <th>வீட்டு எண்</th>
+                                        <th>வயது</th>
+                                        <th>பாலினம்</th>
+                                        <th>நடவடிக்கை</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <!--parentContainer-->
+    </footer>
+</body>
+
+</html>

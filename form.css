@@ -1,0 +1,170 @@
+/* HTML STRUCTURE */
+/* Step -1 - parentContainer */
+/* step -2 - component */
+/* step -3 - componentContainer */
+/* step -4 - row */
+/* step -5 - column */
+/* step -6 - subColumn */
+/* step -7 - contentContainer */
+/* step -8 - content */
+
+/* parent Container - default css style */
+
+
+/* step -2 - component */
+.form {
+    /* background-color: rgb(241, 11, 11);   */
+
+}
+
+/* step -3 - componentContainer */
+.formContainer {
+    /* background-color: rgb(91, 226, 12); */
+
+}
+
+/* step -4 - row */
+.formBody {
+    /* background-color: rgb(255, 255, 255); */
+
+}
+
+/* step -5 - column */
+.formBlock1 {
+    /* background-color: #fc03c6; */
+
+}
+
+.formBlock2 {
+    /* background-color: #ce7bbc; */
+
+
+}
+
+/* step -6 - subColumn */
+
+.formBox1 {
+    /* background-color: #e79191; */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+.formBox2 {
+    /* background-color: #7fe6cf; */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+/* step -7 - contentContainer */
+
+
+.fileUpload {
+    /* background-color: #dc3545; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+
+#jsonFile,
+#excelFile {
+
+    font-size: 1.6rem;
+    font-family: "Inter", serif;
+}
+
+#jsonButton {
+    background-color: var(--lightColor);
+    color: #000000;
+    border: 2px solid rgb(53, 53, 53);
+    padding: 0.3rem 1rem;
+    font-size: var(--regularFont);
+    font-family: "Inter", serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#excelButton {
+    background-color: #28a745;
+    color: #000000;
+    border: 2px solid rgb(53, 53, 53);
+    padding: 0.3rem 1rem;
+    font-size: var(--regularFont);
+    font-family: "Inter", serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+
+#clearButton {
+    background-color: #dc3545;
+    color: #000000;
+    border: 2px solid rgb(53, 53, 53);
+    padding: 0.3rem 1rem;
+    font-size: var(--regularFont);
+    font-family: "Inter", serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}
+
+
+
+/* form 2 */
+
+.categoryform {
+    /* background-color: rgb(255, 0, 234); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+
+}
+
+#columnSelect {
+    width: 10%;
+    padding: 1rem 1.2rem;
+     font-size: 1.6rem;
+}
+
+
+#searchBar {
+    padding: 1rem;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+#searchButton {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 1.5rem;
+    border: 2px solid rgb(53, 53, 53);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#resetButton {
+    background-color: #6c757d;
+    color: #ffffff;
+    padding: 1.5rem;
+    border: 2px solid rgb(53, 53, 53);
+    cursor: pointer;
+    transition: 0.3s ease;
+}

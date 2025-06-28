@@ -1,0 +1,312 @@
+@media (max-width: 576px) {
+
+  .heroBody2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 1rem;
+  }
+
+  .heroBox1 h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .heroBox1 p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .heroBox2 h2 {
+    font-size: 1.4rem;
+  }
+
+  .heroBox2 p {
+    font-size: 1.2rem;
+  }
+
+  #c1,
+  #c2,
+  #c3,
+  #c4 {
+    width: 100%;
+  }
+
+  #card1,
+  #card2,
+  #card3,
+  #card4 {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+
+  .formBody {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .formBlock1,
+  .formBlock2 {
+    width: 100%;
+  }
+
+
+  .fileUpload {
+    /* background-color: #dc3545; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+
+  #jsonFile,
+  #excelFile {
+    font-size: 1.2rem;
+    font-family: "Inter", serif;
+  }
+
+  #jsonButton {
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+  }
+
+  #excelButton {
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+  }
+
+  #clearButton {
+    padding: 0.2rem 1rem;
+    font-size:1rem;  
+
+  }
+
+
+  .categoryform {
+    /* background-color: rgb(255, 0, 234); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+
+}
+#columnSelect {
+    width: 50%;
+}
+
+#searchBar {
+    width: 100%;  
+    font-size: 1.3rem;
+}
+
+#searchButton {
+    padding: 0.8rem 1.2rem;
+}
+
+#resetButton {
+    padding: 0.8rem 1.2rem;
+   
+}
+
+.tableBox1 {
+    /* background-color: #e79191; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+    width: 100%;
+
+}
+
+.tableBox1 button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    width: 50%;
+   
+}
+
+.tableBox2 {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    width: 100%;
+}
+ th {
+      padding: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #4a90e2;
+    color: white;
+    border: 1px solid #ddd;
+    font-size: 1.2rem;
+
+}
+
+/* Optional scrollbar for mobile */
+.tableBox2::-webkit-scrollbar {
+    height: 1rem;
+
+}
+
+.tableBox2::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+}
+
+
+
+}
+
+@media (width >=577px) and (width <=768px) {
+
+  .heroBody2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+  }
+
+  .heroBox1 h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .heroBox1 p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .heroBox2 h2 {
+    font-size: 1.8rem;
+  }
+
+  .heroBox2 p {
+    font-size: 1.5rem;
+  }
+
+  #c1,
+  #c2,
+  #c3,
+  #c4 {
+    width: 100%;
+  }
+
+  #card1,
+  #card2,
+  #card3,
+  #card4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .formBody {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .formBlock1,
+  .formBlock2 {
+    width: 100%;
+  }
+
+  .fileUpload {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  #jsonFile,
+  #excelFile {
+    font-size: 1.4rem;
+    font-family: "Inter", serif;
+  }
+
+  #jsonButton,
+  #excelButton,
+  #clearButton {
+    padding: 0.4rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .categoryform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 1rem 3rem;
+  }
+
+  #columnSelect {
+    width: 60%;
+  }
+
+  #searchBar {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  #searchButton,
+  #resetButton {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .tableBox1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tableBox1 button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.4rem;
+    width: 50%;
+  }
+
+  .tableBox2 {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    width: 100%;
+  }
+  th {
+      padding: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #4a90e2;
+    color: white;
+    border: 1px solid #ddd;
+    font-size: 1.2rem;
+
+}
+
+  .tableBox2::-webkit-scrollbar {
+    height: 1rem;
+  }
+
+  .tableBox2::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+  }
+
+
+
+
+}
+
