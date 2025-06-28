@@ -73,17 +73,17 @@
   }
 
   #jsonButton {
-    padding: 0.2rem 1rem;
+    padding: 1rem 1.5rem;
     font-size: 1rem;
   }
 
   #excelButton {
-    padding: 0.2rem 1rem;
+    padding: 1rem 1.5rem;
     font-size: 1rem;
   }
 
   #clearButton {
-    padding: 0.2rem 1rem;
+    padding: 1rem 1.5rem;
     font-size:1rem;  
 
   }
@@ -129,7 +129,7 @@
 }
 
 .tableBox1 button {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     font-size: 1.2rem;
     width: 50%;
    
@@ -154,13 +154,13 @@
 
 /* Optional scrollbar for mobile */
 .tableBox2::-webkit-scrollbar {
-    height: 1rem;
+    height: 1.3rem;
 
 }
 
 .tableBox2::-webkit-scrollbar-thumb {
     background: #999;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 
@@ -237,7 +237,7 @@
   #jsonButton,
   #excelButton,
   #clearButton {
-    padding: 0.4rem 1.2rem;
+    padding: 1rem 1.5rem;
     font-size: 1.2rem;
   }
 
@@ -262,7 +262,7 @@
 
   #searchButton,
   #resetButton {
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .tableBox1 {
@@ -274,7 +274,7 @@
   }
 
   .tableBox1 button {
-    padding: 0.7rem 1.2rem;
+    padding: 1rem 1.5rem;
     font-size: 1.4rem;
     width: 50%;
   }
